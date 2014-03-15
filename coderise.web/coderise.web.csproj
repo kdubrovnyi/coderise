@@ -17,10 +17,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="app.js" />
+    <Content Include="app\app.js" />
+    <Content Include="app\config.js" />
+    <Content Include="app\main.js" />
+    <Content Include="css\backbone-comments.css" />
+    <Content Include="css\fonts\entypo.svg" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
     <Content Include="index.html" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="test\app\app-spec.js" />
+    <Content Include="test\app\config.js" />
+    <Content Include="test\app\helper.js" />
+    <Content Include="test\app\main.js" />
+    <Content Include="test\index.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\collections\.gitkeep" />
+    <Content Include="app\models\.gitkeep" />
+    <Content Include="app\templates\.gitkeep" />
+    <Content Include="app\views\.gitkeep" />
+    <Content Include="bower.json" />
+    <Content Include="css\fonts\entypo.eot" />
+    <Content Include="css\fonts\entypo.ttf" />
+    <Content Include="css\fonts\entypo.woff" />
+    <Content Include="Gruntfile.coffee" />
+    <Content Include="package.json" />
+    <Content Include="readme.md" />
+    <Content Include="test\mocha.opts" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
