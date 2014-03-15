@@ -35,10 +35,6 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\collections\.gitkeep" />
-    <Content Include="app\models\.gitkeep" />
-    <Content Include="app\templates\.gitkeep" />
-    <Content Include="app\views\.gitkeep" />
     <Content Include="bower.json" />
     <Content Include="css\fonts\entypo.eot" />
     <Content Include="css\fonts\entypo.ttf" />
@@ -53,6 +49,12 @@
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\collections\" />
+    <Folder Include="app\models\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
