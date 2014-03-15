@@ -18,7 +18,7 @@ All client side dependencies are installed with
 [bower](http://twitter.github.com/bower).
 
     $ npm install -g bower
-    $ bower install
+    $ bower install       ### needs to run from GitHub shell
 
 Run application server at [http://localhost:5000](http://localhost:5000) with
 
