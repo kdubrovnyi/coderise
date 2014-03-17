@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace coderise.service.Models
 {
@@ -11,6 +11,8 @@ namespace coderise.service.Models
         public string Description { get; set; }
 
         public string Owner { get; set; }
+
+        public DateTime CreatedAt { get; set; }
 
         public string[] FileList { get; set; }
     }

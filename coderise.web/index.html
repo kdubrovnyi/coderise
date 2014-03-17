@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,58 +12,20 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>Backbone-Comments</h1>
+    <div class="container">
+      <h1>Code Rise</h1>
 
-    <article>
-      <p>Hello! This is a demo of a small Backbone app that manages a simple
-        commenting system, like one you would find on a blog. Comments can be
-        written in Markdown and emails are verified with Mozilla Persona. The
-        only special dependencies are Moment (for formatting timestamps) and
-        Markdown.js (for rendering comment markdown.)</p>
+      <p>This is an application which tends to help you with you code reviews and rise quality of you product</p>
 
-      <p>There's no backend server to store the comments (for now), but it
-        could easily be adapted to communicate with a server or to localStorage
-        in your browser. In future releases, users will be able to edit and
-        delete their comments and use a GitHub-style "zen" comment editor.
-        Basically it's more exciting than a TODO list ;)</p>
+      <hr/>
+      
+      <div class="shelveset-count"></div>
 
-      <p>The app demonstrates some of the concepts and best-practices discussed
-        in the upcoming book <i>Backbone In Action</i> from Manning
-        Publications. Take a look at the <a href="https://github.com/wookiehangover/backbone-comments">
-        source on GitHub</a>; the master branch has a the most basic,
-        non-authenticated version of the app, and the persona and gh-pages
-        branches contain the code running on <a href="http://wookiehangover.github.com/backbone-comments">
-        wookiehangover.github.com/backbone-comments</a>.</p>
+      <ul class="shelvesets">
+      </ul>
 
-    </article>
+    </div>
 
-
-    <hr/>
-
-    <section class="comments">
-      <h3 class="comment-count">0 Comments</h3>
-
-      <form id="comment-form">
-        <div class="form-row">
-          <textarea name="content" placeholder="Leave a message..."></textarea>
-          <a href="#" class="fullscreen">&#9000;</a>
-        </div>
-        <div class="form-row buttons">
-          <span class="email"></span>
-          <a href="#" class="btn dark sign-in"><span>Sign in to leave a comment...</span></a>
-          <button class="btn submit" type="submit">Post your comment</button>
-          <button class="btn logout dark" type="button" style="display:none">Logout</button>
-        </div>
-      </form>
-
-      <ul id="comment-list"></ul>
-
-    </section>
-
-  </div>
-
-  <script src="https://login.persona.org/include.js"></script>
   <script data-main="app/config" src="bower_components/requirejs/require.js"></script>
 
 </body>

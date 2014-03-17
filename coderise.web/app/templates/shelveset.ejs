@@ -1,0 +1,11 @@
+﻿<header>
+  <span class="owner"><a href=""><%= model.get('owner') %></a></span>
+  <span class="date"><%= formatDate() %></span>
+
+  <nav>
+    [<a href="#" class="choose">choose</a>]
+  </nav>
+</header>
+<div class="shelveset-content">
+  <%= renderMarkdown() %>
+</div>

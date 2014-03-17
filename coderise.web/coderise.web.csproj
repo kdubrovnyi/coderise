@@ -16,11 +16,12 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
-    <Content Include="app.js" />
     <Content Include="app\app.js" />
+    <Content Include="app\collections\shelvesets.js" />
     <Content Include="app\config.js" />
     <Content Include="app\main.js" />
+    <Content Include="app\models\shelveset.js" />
+    <Content Include="app\views\shelveset-view.js" />
     <Content Include="css\backbone-comments.css" />
     <Content Include="css\fonts\entypo.svg" />
     <Content Include="css\main.css" />
@@ -44,6 +45,7 @@
     <Content Include="readme.md" />
     <Content Include="test\mocha.opts" />
     <Content Include="runserver.cmd" />
+    <Content Include="app\templates\shelveset.ejs" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -51,12 +53,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\collections\" />
-    <Folder Include="app\models\" />
-    <Folder Include="app\templates\" />
-    <Folder Include="app\views\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -73,15 +70,14 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3989</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:3989/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:5000</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
