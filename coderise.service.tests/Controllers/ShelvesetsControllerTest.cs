@@ -12,7 +12,6 @@ namespace coderise.service.tests.Controllers
         [TestMethod]
         public void Get()
         {
-
             var target = new ShelvesetsController();
 
             var shelvesets = target.Get().ToArray();

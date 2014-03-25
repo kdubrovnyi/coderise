@@ -16,18 +16,23 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app\app.js" />
-    <Content Include="app\collections\shelvesets.js" />
-    <Content Include="app\config.js" />
-    <Content Include="app\main.js" />
-    <Content Include="app\models\shelveset.js" />
-    <Content Include="app\views\shelveset-view.js" />
+    <Content Include="js\app.js" />
+    <Content Include="js\collections\shelvesetCollection.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\models\shelvesetModel.js" />
+    <Content Include="js\vendor\ejs_0.9_alpha_1_production.js" />
+    <Content Include="js\vendor\moment.min.js" />
+    <Content Include="js\views\shelvesetView.js" />
     <Content Include="css\backbone-comments.css" />
     <Content Include="css\fonts\entypo.svg" />
     <Content Include="css\main.css" />
     <Content Include="css\normalize.css" />
     <Content Include="index.html" />
     <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\vendor\backbone-min.js" />
+    <Content Include="js\vendor\jquery.min.js" />
+    <Content Include="js\vendor\markdown.js" />
+    <Content Include="js\vendor\underscore-min.js" />
     <Content Include="test\app\app-spec.js" />
     <Content Include="test\app\config.js" />
     <Content Include="test\app\helper.js" />
@@ -45,7 +50,7 @@
     <Content Include="readme.md" />
     <Content Include="test\mocha.opts" />
     <Content Include="runserver.cmd" />
-    <Content Include="app\templates\shelveset.ejs" />
+    <Content Include="js\templates\shelvesetTemplate.ejs" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -53,7 +58,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
